@@ -1,7 +1,7 @@
 # Turkish Citizen Number Finder From π Number Digits
 
 ![](https://img.shields.io/badge/Made%20for-Python-1f425f.svg)
-![](https://img.shields.io/github/license/{ducknix}/{tcnffpi}.svg)
+![](https://img.shields.io/github/license/ducknix/tcnffpi.svg)
 
 ## Description
 In this project, a script was written that detects the Turkish ID number in the pi number.  Results can obtained quickly with threads.
