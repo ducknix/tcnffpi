@@ -15,8 +15,17 @@ Completely offline.
 > [(eksisozluk.com)](https://seyler.eksisozluk.com/tc-kimlik-numaralarindaki-inanilmaz-algoritma)
 
 ## Usage
-```bash
-python main.py --threads [1-4] --digits [11 - n+11] --output [PATH] --quiet [default: False]
+```
+usage: ./tcnffpi [options]
+
+Turkish Citizen number finder from π number digits
+
+options:
+  -h, --help    show this help message and exit
+  --digits N    Number of π digits to be processed
+  --threads N   An integer for the number of threads
+  --output DIR  Path to write found results
+  --quiet       The program runs silently
 ```
 
 ## Requirements
@@ -24,7 +33,7 @@ python main.py --threads [1-4] --digits [11 - n+11] --output [PATH] --quiet [def
 * [mpmath 1.2.1](https://pypi.org/project/mpmath/ "mpmath · PyPI")
 
 ## Example
-```zsh
+```
 python main.py --threads 4 --digits 3000
 ```
 ```
