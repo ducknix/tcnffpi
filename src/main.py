@@ -22,7 +22,7 @@ class Parameters(argparse.ArgumentParser):
         self.add_argument(
             "--digits",
             dest="digit",
-            metavar='N',
+            metavar="N",
             help="Number of π digits to be processed",
             action="store",
             default=1000
@@ -31,7 +31,7 @@ class Parameters(argparse.ArgumentParser):
         self.add_argument(
             "--threads",
             dest="threads",
-            metavar='N',
+            metavar="N",
             help="An integer for the number of threads",
             action="store",
             default=2
@@ -40,7 +40,7 @@ class Parameters(argparse.ArgumentParser):
         self.add_argument(
             "--output",
             dest="output_dir",
-            metavar='DIR',
+            metavar="DIR",
             help="Path to write found results",
             action="store",
             default=False
@@ -89,7 +89,7 @@ def check_national_identifer(id: int) -> bool:
     if (len(id) < 11 or len(id) > 11):
         return False
 
-    elif (id[0] == '0'):
+    elif (id[0] == "0"):
         return False
 
     elif not(check_1(id) and check_2(id)):
@@ -108,8 +108,8 @@ def search_in_digits(digits: int, fs: bool, quiet: bool) -> int:
 
         if (check_national_identifer(x)):
             if (fs):
-                with open(fs, 'a') as file:
-                    file.write(x + '\n')
+                with open(fs, "a") as file:
+                    file.write(x + "\n")
             if (not quiet):
                 print("Found: %s" % x)
 
@@ -121,10 +121,10 @@ def simple_function(pi, x, y, z, i):
 def main() -> int:
     args = Parameters().get_args()
 
-    output = args['output_dir']
-    thread = int(args['threads'])
-    digits = int(args['digit'])
-    quiet = args['quiet']
+    output = args["output_dir"]
+    thread = int(args["threads"])
+    digits = int(args["digit"])
+    quiet = args["quiet"]
 
     thargs = [0]
     thlist = []
@@ -135,7 +135,7 @@ def main() -> int:
     # Generate PI Digits
     mp.dps = digits + 1
     mp.dps = mp.dps + (11 - mp.dps % 11)
-    π = str(mp.pi).split('.')[1]
+    π = str(mp.pi).split(".")[1]
 
     for i in range(1, thread+1):
         thargs.append((digits // thread * i) + (digits % i))
@@ -155,6 +155,6 @@ def main() -> int:
     return 0
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     # sen giderken adımlarını sayarım, heyhat!
     sys.exit(main())
