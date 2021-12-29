@@ -1,0 +1,10 @@
+[[source]]
+url = 'https://pypi.python.org/simple'
+verify_ssl = true
+name = 'pypi'
+
+[requires]
+python='3'
+
+[packages]
+mpmath='1.2.1'
