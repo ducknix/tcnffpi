@@ -25,5 +25,31 @@ python main.py --threads [1-4] --digits [11 - n+11] --output [PATH] --quiet [def
 
 ## Example
 ```zsh
-./main.py --threads 4 --digits 14200 --output ../example.txt
+python main.py --threads 4 --digits 3000
+```
+```
+Found: 17450284102
+Found: 21339360726
+Found: 81520920962
+Found: 86021394946
+Found: 31767523846
+Found: 12714526356
+Found: 19311881710
+Found: 64201989380
+Found: 93809525720
+Found: 82953311686
+Found: 10404753464
+Found: 34797753566
+Found: 47723501414
+Found: 79178608578
+Found: 56042419652
+Found: 46575739624
+Found: 57640789512
+Found: 74623436454
+Found: 85844479526
+Found: 98387447808
+Found: 91197939952
+Found: 10159195618
+Found: 56181467514
+Found: 14269123974
 ```
