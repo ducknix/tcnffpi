@@ -15,7 +15,7 @@ class Parameters(argparse.ArgumentParser):
 
         super(Parameters, self).__init__(
             usage="%(prog)s [options]",
-            description="Turkish Citizen number finder from π number digits",
+            description="Turkish Citizen number finder from π digits",
             prog="./tcnffpi"
         )
 
