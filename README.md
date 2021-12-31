@@ -12,7 +12,7 @@ Completely offline.
 >* The first digit cannot be 0.
 >* When the sum of the 2nd, 4th, 6th and 8th digits of the ID numbers is subtracted from 7 times the sum of the 1st, 3rd, 7th and 9th digits, the remainder of the division by 10 gives us the 10th digit.
 >* The remainder of the 1st, 2nd, 3rd, 4th, 5th, 6th, 7th, 8th, 9th, and 10th digits' sum divided by the 10 gives us the 11th digit.
-> [(eksisozluk.com)](https://seyler.eksisozluk.com/tc-kimlik-numaralarindaki-inanilmaz-algoritma)
+> [(eksisozluk.com)](https://seyler.eksisozluk.com/tc-kimlik-numaralarindaki-inanilmaz-algoritma "TC Kimlik Numaralarındaki İnanılmaz Algoritma")
 
 ## Usage
 ```
