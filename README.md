@@ -1,24 +1,24 @@
-# Turkish Citizen Number Finder From π Number Digits
+# Turkish Citizen Number Finder From π Digits
 
 ![](https://img.shields.io/badge/Made%20for-Python-1f425f.svg)
 ![](https://img.shields.io/github/license/ducknix/tcnffpi.svg)
 
 ## Description
-In this project, a script was written that detects the Turkish ID number in the pi number.  Results can obtained quickly with threads.
+In this project, a script was written that detects the Turkish ID number in the pi digits.  Results can obtained quickly with threads.
 
 Completely offline. 
 
 >### Algorithm
 >* The first digit cannot be 0.
 >* When the sum of the 2nd, 4th, 6th and 8th digits of the ID numbers is subtracted from 7 times the sum of the 1st, 3rd, 7th and 9th digits, the remainder of the division by 10 gives us the 10th digit.
->* The remainder of the 1st, 2nd, 3rd, 4th, 5th, 6th, 7th, 8th, 9th, and 10th digits' sum divided by the 10th digit gives us the 11th digit.
+>* The remainder of the 1st, 2nd, 3rd, 4th, 5th, 6th, 7th, 8th, 9th, and 10th digits' sum divided by the 10 gives us the 11th digit.
 > [(eksisozluk.com)](https://seyler.eksisozluk.com/tc-kimlik-numaralarindaki-inanilmaz-algoritma)
 
 ## Usage
 ```
 usage: ./tcnffpi [options]
 
-Turkish Citizen number finder from π number digits
+Turkish Citizen number finder from π digits
 
 options:
   -h, --help    show this help message and exit
